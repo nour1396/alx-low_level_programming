@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * main - prints alphabet withot q and e
  *
@@ -17,6 +18,6 @@ int main(void)
 			putchar(i);
 		}
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
