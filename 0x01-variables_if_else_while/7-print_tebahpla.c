@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers from 0 to 9
- *
+ * main - prints lowercase alphabet in reserve
+ * followed by a new line
  * Return: always 0
  */
 int main(void)
 {
-	int i;
+	char i;
 
-	for (i = 48; i < 58; i++)
+	for (ch = 'z'; i >= 'a'; i--)
 	{
 		putchar(i);
 	}
