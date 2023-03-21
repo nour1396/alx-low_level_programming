@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all combinations of two digits numbers
+ *
  * Return: always 0
  */
 int main(void)
@@ -17,9 +18,9 @@ int main(void)
 				putchar(' ');
 				putchar((d / 10) + 48);
 				putchar((d % 10) + 48);
-				if (s != 98 || j != 99)
+				if (s != 98 || d != 99)
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}

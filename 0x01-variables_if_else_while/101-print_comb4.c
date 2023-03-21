@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all different combinations of three digits
+ *
  * Return: always 0
  */
 int main(void)
@@ -19,7 +20,7 @@ int main(void)
 					putchar(c);
 					if (a != 55 || b != 56)
 					{
-						putchar('.');
+						putchar(',');
 						putchar(' ');
 					}
 				}

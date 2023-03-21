@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
  * main - prints all different combinations of two digits
+ *
  * Return: always 0
  */
 int main(void)
@@ -16,7 +17,7 @@ int main(void)
 				putchar(l);
 				if (k != 56 || l != 57)
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}
