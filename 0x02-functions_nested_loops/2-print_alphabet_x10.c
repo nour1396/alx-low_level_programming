@@ -19,6 +19,6 @@ _putchar(k);
 k++;
 }
 _putchar('\n');
-i++;:%s/^[[:space:]]\+//g
+i++;
 }
 }
