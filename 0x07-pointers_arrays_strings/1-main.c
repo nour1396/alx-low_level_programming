@@ -3,33 +3,34 @@
 
 /**
  * simple_print_buffer - prints buffer in hexa
- * @buffer: the memory address to print
+ * @buffer: the address of memory to print
  * @size: the size of the memory to print
  *
+ * Return: Nothing.
  */
 void simple_print_buffer(char *buffer, unsigned int size)
 {
-    unsigned int o;
+    unsigned int i;
 
-    o = 0;
-    while (o < size)
+    i = 0;
+    while (i < size)
     {
-        if (o % 10)
+        if (i % 10)
         {
             printf(" ");
         }
-        if (!(o % 10) && o)
+        if (!(i % 10) && i)
         {
             printf("\n");
         }
-        printf("0x%02x", buffer[o]);
-        o++;
+        printf("0x%02x", buffer[i]);
+        i++;
     }
     printf("\n");
 }
 
 /**
- * main - check code
+ * main - check the code
  *
  * Return: Always 0.
  */
