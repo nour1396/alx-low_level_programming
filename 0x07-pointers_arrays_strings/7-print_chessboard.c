@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * print_chessboard - Entry
+ * print_chessboard - Entry point
  * @a: array
- * Return: always 0
+ * Return: Always 0 (Success)
  */
 void print_chessboard(char (*a)[8])
 {
-	int r;
-	int y;
+	int i;
+	int j;
 
-	for (r = 0; r < 8; r++)
+	for (i = 0; i < 8; i++)
 	{
-		for (y = 0; y < 8; y++)
-			_putchar(a[r][y]);
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
 		_putchar('\n');
 	}
 }
