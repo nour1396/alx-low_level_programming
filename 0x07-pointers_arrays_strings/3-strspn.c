@@ -8,18 +8,18 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
-	int d;
+	int r;
 
 	while (*s)
 	{
-		for (d = 0; accept[d]; d++)
+		for (r = 0; accept[r]; r++)
 		{
-			if (*s == accept[d])
+			if (*s == accept[r])
 			{
 				n++;
 				break;
 			}
-			else if (accept[d + 1] == '\0')
+			else if (accept[r + 1] == '\0')
 				return (n);
 		}
 		s++;
